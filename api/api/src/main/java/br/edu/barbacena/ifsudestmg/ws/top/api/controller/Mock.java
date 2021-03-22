@@ -1,9 +1,12 @@
 package br.edu.barbacena.ifsudestmg.ws.top.api.controller;
 
-import br.edu.barbacena.ifsudestmg.ws.top.api.controller.dto.*;
-import br.edu.barbacena.ifsudestmg.ws.top.api.controller.dto.Process;
 
-import java.io.*;
+import br.edu.barbacena.ifsudestmg.ws.top.api.controller.dto.Process;
+import br.edu.barbacena.ifsudestmg.ws.top.api.controller.dto.*;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Objects;
@@ -92,4 +95,20 @@ public class Mock {
 
         return processes;
     }
+
+    /**
+     *
+     * @param top
+     * @param idTopProccess
+     * @return referenceProcess from id
+     */
+    public Process findProcessFromId(Top top, Integer idTopProccess){
+
+        try {
+            return top.getProcesses().stream().filter(p -> p.getId() == idTopProccess).findFirst().orElseGet(null);
+        }
+        catch(Exception ex){
+            return new Process();
+        }
+    }//findProcessFromId
 }

@@ -1,6 +1,9 @@
 package br.edu.barbacena.ifsudestmg.ws.top.api.controller.dto;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor

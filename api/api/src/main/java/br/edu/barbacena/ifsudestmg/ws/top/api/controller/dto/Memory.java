@@ -1,6 +1,8 @@
 package br.edu.barbacena.ifsudestmg.ws.top.api.controller.dto;
 
-import lombok.*;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Data
