@@ -13,7 +13,7 @@ import java.util.Collection;
 public class Top {
 
     private LocalTime time;
-    private long upTime;
+    private String upTime;
     private int numberOfUsers;
 
     private int numberOfTasks;

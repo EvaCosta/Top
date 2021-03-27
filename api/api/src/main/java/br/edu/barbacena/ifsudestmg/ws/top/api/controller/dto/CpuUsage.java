@@ -13,8 +13,8 @@ public class CpuUsage {
 
     private double user;
     private double system;
-    private double lowPriorityProcess;
     private double idleProcess;
+    private double niceValue;
     private double ioWait;
     private double hardwareInterrupts;
     private double softwareInterrupts;

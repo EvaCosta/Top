@@ -13,7 +13,8 @@ public class SwapMemory extends Memory {
     private double available;
 
     @Builder
-    public SwapMemory(Double total, Double free, Double used, Double available) {
+    public SwapMemory(String measureUnity, Double total, Double free, Double used, Double available) {
+        setMeasureUnity(measureUnity);
         setTotal(total);
         setUsed(used);
         setFree(free);

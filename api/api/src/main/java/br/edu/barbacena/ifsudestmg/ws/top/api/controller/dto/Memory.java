@@ -11,5 +11,6 @@ public class Memory {
     private double total;
     private double free;
     private double used;
+    private String measureUnity;
 }
 

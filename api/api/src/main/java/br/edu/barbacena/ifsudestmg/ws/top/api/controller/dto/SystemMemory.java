@@ -10,8 +10,9 @@ public class SystemMemory extends Memory {
     private double bufferCache;
 
     @Builder
-    public SystemMemory(Double total, Double free, Double used, Double bufferCache) {
+    public SystemMemory(String measureUnity, Double total, Double free, Double used, Double bufferCache) {
         setTotal(total);
+        setMeasureUnity(measureUnity);
         setUsed(used);
         setFree(free);
         this.bufferCache = bufferCache;
