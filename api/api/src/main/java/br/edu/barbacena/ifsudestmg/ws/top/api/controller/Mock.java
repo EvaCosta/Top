@@ -32,6 +32,7 @@ public class Mock {
 
             return topController.extractData(data);
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             return null;
         }
     }

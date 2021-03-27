@@ -49,7 +49,7 @@ public class TopController {
             top.addProcesses(extractProcessData(data));
             return top;
         } catch (Exception e) {
-            throw new RuntimeException("Invalid data received");
+            throw new RuntimeException(e.getMessage());
         }
     }
 
