@@ -1,43 +1,192 @@
-1478 lucas 20 0 1303960 95280 79116 S 8,0 1,2 0:10.56 konsole
-1200 lucas 20 0 3832716 176920 122856 S 4,0 2,2 6:12.35 kwin_x11
-891 root 20 0 1205460 139768 71800 S 3,7 1,7 0:37.52 Xorg
-1237 lucas 20 0 2383004 355084 144720 S 0,7 4,4 0:22.93 plasmashell
-1209 lucas 20 0 543404 32152 28812 S 0,3 0,4 0:00.19 kactivitymanage
-1242 lucas 20 0 356460 45448 40292 S 0,3 0,6 0:00.46 kdeconnectd
-1502 lucas 20 0 12884 4028 3224 R 0,3 0,0 0:06.70 top
-1960 root 20 0 0 0 0 I 0,3 0,0 0:00.97 kworker/3:0-events
-1 root 20 0 168716 11732 8616 S 0,0 0,1 0:02.37 systemd
-2 root 20 0 0 0 0 S 0,0 0,0 0:00.00 kthreadd
-3 root 0 -20 0 0 0 I 0,0 0,0 0:00.00 rcu_gp
-4 root 0 -20 0 0 0 I 0,0 0,0 0:00.00 rcu_par_gp
-6 root 0 -20 0 0 0 I 0,0 0,0 0:00.00 kworker/0:0H-kblockd
-9 root 0 -20 0 0 0 I 0,0 0,0 0:00.00 mm_percpu_wq
-10 root 20 0 0 0 0 S 0,0 0,0 0:00.03 ksoftirqd/0
-11 root 20 0 0 0 0 I 0,0 0,0 0:00.56 rcu_sched
-12 root rt 0 0 0 0 S 0,0 0,0 0:00.03 migration/0
-13 root -51 0 0 0 0 S 0,0 0,0 0:00.00 idle_inject/0
-14 root 20 0 0 0 0 S 0,0 0,0 0:00.00 cpuhp/0
-15 root 20 0 0 0 0 S 0,0 0,0 0:00.00 cpuhp/1
-16 root -51 0 0 0 0 S 0,0 0,0 0:00.00 idle_inject/1
-17 root rt 0 0 0 0 S 0,0 0,0 0:00.69 migration/1
-18 root 20 0 0 0 0 S 0,0 0,0 0:00.01 ksoftirqd/1
-20 root 0 -20 0 0 0 I 0,0 0,0 0:00.00 kworker/1:0H-kblockd
-21 root 20 0 0 0 0 S 0,0 0,0 0:00.00 cpuhp/2
-22 root -51 0 0 0 0 S 0,0 0,0 0:00.00 idle_inject/2
-23 root rt 0 0 0 0 S 0,0 0,0 0:00.68 migration/2
-24 root 20 0 0 0 0 S 0,0 0,0 0:00.01 ksoftirqd/2
-26 root 0 -20 0 0 0 I 0,0 0,0 0:00.00 kworker/2:0H-kblockd
-27 root 20 0 0 0 0 S 0,0 0,0 0:00.00 cpuhp/3
-28 root -51 0 0 0 0 S 0,0 0,0 0:00.00 idle_inject/3
-29 root rt 0 0 0 0 S 0,0 0,0 0:00.68 migration/3
-30 root 20 0 0 0 0 S 0,0 0,0 0:00.01 ksoftirqd/3
-32 root 0 -20 0 0 0 I 0,0 0,0 0:00.00 kworker/3:0H-kblockd
-33 root 20 0 0 0 0 S 0,0 0,0 0:00.00 kdevtmpfs
-34 root 0 -20 0 0 0 I 0,0 0,0 0:00.00 netns
-35 root 20 0 0 0 0 S 0,0 0,0 0:00.00 rcu_tasks_kthre
-36 root 20 0 0 0 0 S 0,0 0,0 0:00.00 rcu_tasks_rude_
-37 root 20 0 0 0 0 S 0,0 0,0 0:00.00 rcu_tasks_trace
-38 root 20 0 0 0 0 S 0,0 0,0 0:00.00 kauditd
-39 root 20 0 0 0 0 S 0,0 0,0 0:00.00 khungtaskd
-40 root 20 0 0 0 0 S 0,0 0,0 0:00.00 oom_reaper
-41 root 0 -20 0 0 0 I 0,0 0,0 0:00.00 writeback
+top - 14:55:15 up 0 min,  3 users,  load average: 0,90, 0,27, 0,09
+Tasks: 185 total,   1 running, 184 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1,3 us,  1,3 sy,  0,0 ni, 97,4 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
+MiB Mem :   7957,9 total,   6441,8 free,    580,6 used,    935,5 buff/cache
+MiB Swap:   1873,3 total,   1873,3 free,      0,0 used.   7087,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  168732  11824   8752 S   0,0   0,1   0:01.45 systemd
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_par_gp
+      5 root      20   0       0      0      0 I   0,0   0,0   0:00.02 kworker/0:0-events
+      6 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/0:0H-kblockd
+      7 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/0:1-memcg_kmem_cache
+      8 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/u8:0-events_unbound
+      9 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 mm_percpu_wq
+     10 root      20   0       0      0      0 S   0,0   0,0   0:00.01 ksoftirqd/0
+     11 root      20   0       0      0      0 I   0,0   0,0   0:00.04 rcu_sched
+     12 root      rt   0       0      0      0 S   0,0   0,0   0:00.00 migration/0
+     13 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/0
+     14 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/0
+     15 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/1
+     16 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/1
+     17 root      rt   0       0      0      0 S   0,0   0,0   0:00.44 migration/1
+     18 root      20   0       0      0      0 S   0,0   0,0   0:00.01 ksoftirqd/1
+     19 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/1:0-events
+     20 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/1:0H-kblockd
+     21 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/2
+     22 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/2
+     23 root      rt   0       0      0      0 S   0,0   0,0   0:00.44 migration/2
+     24 root      20   0       0      0      0 S   0,0   0,0   0:00.01 ksoftirqd/2
+     25 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/2:0-memcg_kmem_cache
+     26 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/2:0H-kblockd
+     27 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/3
+     28 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/3
+     29 root      rt   0       0      0      0 S   0,0   0,0   0:00.45 migration/3
+     30 root      20   0       0      0      0 S   0,0   0,0   0:00.01 ksoftirqd/3
+     31 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/3:0-events
+     32 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/3:0H-kblockd
+     33 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kdevtmpfs
+     34 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 netns
+     35 root      20   0       0      0      0 S   0,0   0,0   0:00.00 rcu_tasks_kthre
+     36 root      20   0       0      0      0 S   0,0   0,0   0:00.00 rcu_tasks_rude_
+     37 root      20   0       0      0      0 S   0,0   0,0   0:00.00 rcu_tasks_trace
+     38 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kauditd
+     39 root      20   0       0      0      0 S   0,0   0,0   0:00.00 khungtaskd
+     40 root      20   0       0      0      0 S   0,0   0,0   0:00.00 oom_reaper
+     41 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 writeback
+     42 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kcompactd0
+     43 root      25   5       0      0      0 S   0,0   0,0   0:00.00 ksmd
+     44 root      39  19       0      0      0 S   0,0   0,0   0:00.00 khugepaged
+     49 root      20   0       0      0      0 I   0,0   0,0   0:00.04 kworker/1:1-events
+     53 root      20   0       0      0      0 I   0,0   0,0   0:00.02 kworker/2:1-events
+     57 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/3:1-events
+     93 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kintegrityd
+     94 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kblockd
+     95 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 blkcg_punt_bio
+     96 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 tpm_dev_wq
+     97 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ata_sff
+     98 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 md
+     99 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 edac-poller
+    100 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 devfreq_wq
+    101 root      rt   0       0      0      0 S   0,0   0,0   0:00.00 watchdogd
+    102 root      20   0       0      0      0 I   0,0   0,0   0:00.01 kworker/u8:1-events_unbound
+    103 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 pm_wq
+    105 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kswapd0
+    106 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ecryptfs-kthrea
+    108 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kthrotld
+    109 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 acpi_thermal_pm
+    110 root      20   0       0      0      0 S   0,0   0,0   0:00.01 scsi_eh_0
+    111 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_0
+    112 root      20   0       0      0      0 S   0,0   0,0   0:00.01 scsi_eh_1
+    113 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_1
+    114 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/u8:2-events_power_efficient
+    115 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 vfio-irqfd-clea
+    116 root      20   0       0      0      0 I   0,0   0,0   0:00.01 kworker/u8:3-events_unbound
+    117 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ipv6_addrconf
+    119 root       0 -20       0      0      0 I   0,0   0,0   0:00.06 kworker/3:1H-kblockd
+    127 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kstrp
+    130 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 zswap-shrink
+    131 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u9:0
+    136 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 charger_manager
+    137 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/1:2-events
+    185 root      20   0       0      0      0 I   0,0   0,0   0:00.02 kworker/3:2-events
+    186 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 cryptd
+    188 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/1:3-events
+    190 root      20   0       0      0      0 S   0,0   0,0   0:00.00 scsi_eh_2
+    191 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_2
+    207 root     -51   0       0      0      0 S   0,0   0,0   0:00.02 irq/18-vmwgfx
+    208 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ttm_swap
+    210 root       0 -20       0      0      0 I   0,0   0,0   0:00.01 kworker/1:1H-kblockd
+    211 root       0 -20       0      0      0 I   0,0   0,0   0:00.04 kworker/0:1H-kblockd
+    213 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/0:2-events
+    214 root      20   0       0      0      0 I   0,0   0,0   0:00.03 kworker/2:2-events
+    252 root       0 -20       0      0      0 I   0,0   0,0   0:00.03 kworker/2:1H-kblockd
+    254 root      20   0       0      0      0 S   0,0   0,0   0:00.01 jbd2/sda3-8
+    255 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ext4-rsv-conver
+    298 root      19  -1   44460  16740  15432 S   0,0   0,2   0:00.24 systemd-journal
+    318 root      20   0       0      0      0 I   0,0   0,0   0:00.01 kworker/3:3-mm_percpu_wq
+    322 root      20   0   24320   6992   4048 S   0,0   0,1   0:00.17 systemd-udevd
+    327 root       0 -20       0      0      0 S   0,0   0,0   0:00.00 loop0
+    332 root       0 -20       0      0      0 S   0,0   0,0   0:00.00 loop1
+    334 root       0 -20       0      0      0 S   0,0   0,0   0:00.02 loop2
+    335 root       0 -20       0      0      0 S   0,0   0,0   0:00.00 loop3
+    363 root       0 -20       0      0      0 S   0,0   0,0   0:00.00 loop4
+    364 root       0 -20       0      0      0 S   0,0   0,0   0:00.00 loop5
+    365 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/0:3-events
+    366 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 iprt-VBoxWQueue
+    506 systemd+  20   0   25100  12580   8524 S   0,0   0,2   0:00.17 systemd-resolve
+    507 systemd+  20   0   91408   6632   5744 S   0,0   0,1   0:00.14 systemd-timesyn
+    509 root      20   0    8288   4888   1756 S   0,0   0,1   0:00.28 haveged
+    528 root      20   0  239276   7564   6452 S   0,0   0,1   0:00.05 accounts-daemon
+    529 root      20   0    2528    916    848 S   0,0   0,0   0:00.00 acpid
+    533 avahi     20   0    9408   3740   3400 S   0,0   0,0   0:00.01 avahi-daemon
+    534 root      20   0    9404   2784   2572 S   0,0   0,0   0:00.00 cron
+    535 root      20   0   71392  13552  11388 S   0,0   0,2   0:00.05 cupsd
+    536 message+  20   0    9624   6028   4168 S   0,0   0,1   0:00.42 dbus-daemon
+    537 root      20   0  263088  19164  16688 S   0,0   0,2   0:00.14 NetworkManager
+    545 root      20   0   82720   3848   3540 S   0,0   0,0   0:00.01 irqbalance
+    547 root      20   0   32316  17852  10128 S   0,0   0,2   0:00.16 networkd-dispat
+    551 root      20   0  236044   9512   6732 S   0,0   0,1   0:00.24 polkitd
+    553 syslog    20   0  221124   4884   3840 S   0,0   0,1   0:00.02 rsyslogd
+    555 root      20   0  996408  30276  15504 S   0,0   0,4   0:00.95 snapd
+    560 root      20   0   18052   8628   7568 S   0,0   0,1   0:00.19 systemd-logind
+    562 root      20   0  393768  12136  10316 S   0,0   0,1   0:00.15 udisksd
+    566 root      20   0   14624   5344   4748 S   0,0   0,1   0:00.03 wpa_supplicant
+    583 avahi     20   0    9224    340      0 S   0,0   0,0   0:00.00 avahi-daemon
+    612 root      20   0  180788  12644  11004 S   0,0   0,2   0:00.04 cups-browsed
+    616 lp        20   0   16228   6640   5832 S   0,0   0,1   0:00.01 dbus
+    621 root      20   0  315032  10780   9060 S   0,0   0,1   0:00.06 ModemManager
+    633 root      20   0  110508  20536  12912 S   0,0   0,3   0:00.11 unattended-upgr
+    634 root      20   0       0      0      0 I   0,0   0,0   0:00.00 kworker/2:3-events
+    684 whoopsie  20   0  325512  14564  12752 S   0,0   0,2   0:00.01 whoopsie
+    690 kernoops  20   0   12136    448      0 S   0,0   0,0   0:00.00 kerneloops
+    703 kernoops  20   0   12136    448      0 S   0,0   0,0   0:00.00 kerneloops
+    854 root      20   0  138532  14820  13676 S   0,0   0,2   0:00.00 sddm
+    865 root      20   0  361808   3076   2692 S   0,0   0,0   0:00.00 VBoxService
+    877 root      20   0 1167516 102152  72180 S   0,0   1,3   0:02.70 Xorg
+    897 root      20   0   56096  14220  13080 S   0,0   0,2   0:00.00 sddm-helper
+    901 lucas     20   0   19760  10144   8404 S   0,0   0,1   0:00.11 systemd
+    902 lucas     20   0  170056   3452     20 S   0,0   0,0   0:00.00 (sd-pam)
+    908 lucas     20   0  108340  11304   8244 S   0,0   0,1   0:00.02 pipewire
+    909 lucas      9 -11  623172  18756  14868 S   0,0   0,2   0:00.17 pulseaudio
+    911 lucas     20   0  132256  12156  11288 S   0,0   0,1   0:00.02 startplasma-x11
+    914 rtkit     21   1  153796   3168   2920 S   0,0   0,0   0:00.00 rtkit-daemon
+    915 lucas     20   0    8960   5484   4176 S   0,0   0,1   0:00.18 dbus-daemon
+    929 lucas     20   0   26608  10584   8208 S   0,0   0,1   0:00.08 pipewire-media-
+    949 lucas     20   0  243472   8524   7616 S   0,0   0,1   0:00.00 gsettings-helpe
+   1034 lucas     20   0   20560    356      0 S   0,0   0,0   0:00.00 VBoxClient
+   1035 lucas     20   0  152964   4064   3548 S   0,0   0,0   0:00.00 VBoxClient
+   1044 lucas     20   0   20560    356      0 S   0,0   0,0   0:00.00 VBoxClient
+   1045 lucas     20   0  152796   2800   2436 S   0,0   0,0   0:00.00 VBoxClient
+   1051 lucas     20   0   20560    360      0 S   0,0   0,0   0:00.00 VBoxClient
+   1053 lucas     20   0  153312   2772   2404 S   0,0   0,0   0:00.04 VBoxClient
+   1060 lucas     20   0   20560    356      0 S   0,0   0,0   0:00.00 VBoxClient
+   1061 lucas     20   0  155076   3456   2924 S   0,0   0,0   0:00.01 VBoxClient
+   1065 lucas     20   0    6040    448      0 S   0,0   0,0   0:00.00 ssh-agent
+   1151 lucas     20   0    2396     88      0 S   0,0   0,0   0:00.00 start_kdeinit
+   1152 lucas     20   0  104168  23904  20564 S   0,0   0,3   0:00.04 kdeinit5
+   1154 lucas     20   0  275104  37164  33076 S   0,0   0,5   0:00.10 klauncher
+   1181 lucas     20   0  928968  77652  65080 S   0,0   1,0   0:00.74 kded5
+   1185 lucas     20   0 3831716 175272 122564 S   0,0   2,2   0:33.22 kwin_x11
+   1190 lucas     20   0  276320  38712  33632 S   0,0   0,5   0:00.34 kglobalaccel5
+   1194 lucas     20   0  543352  32124  28772 S   0,0   0,4   0:00.07 kactivitymanage
+   1206 lucas     20   0  279556  41536  36948 S   0,0   0,5   0:00.12 ksmserver
+   1213 lucas     20   0 2977664 325908 153236 S   0,0   4,0   0:07.03 plasmashell
+   1215 lucas     39  19  256,2g  23180  20436 S   0,0   0,3   0:00.13 baloo_file
+   1219 lucas     20   0  280984  39944  35540 S   0,0   0,5   0:00.12 kaccess
+   1221 lucas     20   0  235340  20468  18448 S   0,0   0,3   0:00.03 xembedsniproxy
+   1224 lucas     20   0  427492  41972  37472 S   0,0   0,5   0:00.11 polkit-kde-auth
+   1227 lucas     20   0  234332  22072  19992 S   0,0   0,3   0:00.05 gmenudbusmenupr
+   1229 root      20   0  249716   8460   7456 S   0,0   0,1   0:00.18 upowerd
+   1243 lucas     20   0  356404  45296  40132 S   0,0   0,6   0:00.16 kdeconnectd
+   1250 lucas     20   0  365924  43792  39036 S   0,0   0,5   0:00.15 DiscoverNotifie
+   1267 lucas     20   0  156084   5504   5000 S   0,0   0,1   0:00.00 dconf-service
+   1278 lucas     20   0    7672   3848   3516 S   0,0   0,0   0:00.00 xsettingsd
+   1280 root      20   0  360248  20868  15144 S   0,0   0,3   0:00.67 packagekitd
+   1310 lucas     20   0  236888   4908   4464 S   0,0   0,1   0:00.00 agent
+   1318 lucas     20   0  305372   6824   6156 S   0,0   0,1   0:00.01 at-spi-bus-laun
+   1326 lucas     20   0    7964   4072   3712 S   0,0   0,0   0:00.00 dbus-daemon
+   1339 lucas     20   0  404044  37232  33508 S   0,0   0,5   0:00.13 org_kde_powerde
+   1429 lucas     20   0  226480  19424  17560 S   0,0   0,2   0:00.05 kscreen_backend
+   1430 lucas     20   0   45392   6836   6204 S   0,0   0,1   0:00.00 obexd
+   1434 lucas     20   0  178652  20744  17236 S   0,0   0,3   0:00.02 desktop.so
+   1438 lucas     20   0  104396  18728  15360 S   0,0   0,2   0:00.00 file.so
+   1445 lucas     20   0  104312  17584  14232 S   0,0   0,2   0:00.00 file.so
+   1446 lucas     20   0 1295096  74592  58692 S   0,0   0,9   0:00.15 thumbnail.so
+   1473 lucas     20   0  256,3g  39928  35620 S   0,0   0,5   0:00.08 baloorunner
+   1485 lucas     20   0  256,1g  21752  18212 S   0,0   0,3   0:00.00 tags.so
+   1487 lucas     20   0 1303108  94664  79008 S   0,0   1,2   0:00.45 konsole
+   1502 lucas     20   0   10848   4904   3328 S   0,0   0,1   0:00.03 bash
+   1510 lucas     20   0   12716   3664   3200 R   0,0   0,0   0:00.00 top

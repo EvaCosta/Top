@@ -1,6 +1,7 @@
 package br.edu.barbacena.ifsudestmg.ws.top.api.controller.dto;
 
 import lombok.*;
+import org.jetbrains.annotations.Nullable;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -28,11 +29,13 @@ public class Top {
     private SystemMemory systemMemory = new SystemMemory();
     private ArrayList<Process> processes = new ArrayList<>();
 
-    public boolean addProcess(Process process) {
-        return processes.add(process);
+    public void addProcesses(Collection<Process> processes) {
+        this.processes.addAll(processes);
     }
 
-    public boolean addProcesses(Collection<Process> processes){
-        return this.processes.addAll(processes);
+    @Nullable
+    public Process getProcessById(int id) {
+        return processes.stream()
+                .filter(p -> p.getId() == id).findAny().orElse(null);
     }
 }
