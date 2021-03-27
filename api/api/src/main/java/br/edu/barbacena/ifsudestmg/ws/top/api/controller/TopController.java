@@ -129,7 +129,7 @@ public class TopController {
         //endregion
 
         //region Users
-        Pattern usersPattern = Pattern.compile("(?<=\\s|^)\\d+(?=\\s|$) users");
+        Pattern usersPattern = Pattern.compile("(?<=\\s|^)\\d+(?=\\s|$) user");
         matcher = usersPattern.matcher(line);
         if (!matcher.find())
             throw new RuntimeException("Unable to retrieve users count info");
