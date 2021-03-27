@@ -67,7 +67,7 @@ public class TopController {
 
         final ArrayList<String> data = new ArrayList<>();
 
-        var process = Runtime.getRuntime().exec("top -b -n 1");
+        java.lang.Process process = Runtime.getRuntime().exec("top -b -n 1");
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
             String line;
@@ -106,7 +106,7 @@ public class TopController {
         if (!matcher.find())
             throw new RuntimeException("Unable to retrieve load average info");
 
-        var splLoadAverage = matcher.group(0).split(", ");
+        String[] splLoadAverage = matcher.group(0).split(", ");
         LoadAverage loadAverage = new LoadAverage();
         try {
             loadAverage.setOneMinute(StringExt.toDouble(splLoadAverage[0]));
@@ -153,7 +153,7 @@ public class TopController {
             // the remaining string.
 
             line = line.substring(line.indexOf(":") + 1).trim();
-            var split = line.split(", ");
+            String[] split = line.split(", ");
 
             top.setNumberOfTasks(Integer.parseInt(split[0].split(" ")[0]));
             top.setRunningTasks(Integer.parseInt(split[1].split(" ")[0]));
@@ -178,7 +178,7 @@ public class TopController {
             // the remaining string.
 
             line = line.substring(line.indexOf(":") + 1).trim();
-            var split = line.split(", ");
+            String[] split = line.split(", ");
 
             CpuUsage cpuUsage = new CpuUsage();
 
@@ -211,7 +211,7 @@ public class TopController {
             memory.setMeasureUnity(line.substring(0, line.indexOf(" ")));
 
             line = line.substring(line.indexOf(":") + 1).trim();
-            var split = line.split(", ");
+            String[] split = line.split(", ");
 
             memory.setTotal(StringExt.toDouble(split[0].split(" ")[0]));
             memory.setFree(StringExt.toDouble(split[1].split(" ")[0]));
@@ -235,7 +235,7 @@ public class TopController {
             // In some cases, the separator of the used memory comes as "." not as ",", so we need to replace
             // it before splitting
             line = line.substring(line.indexOf(":") + 1).trim().replace("used.", "used,");
-            var split = line.split(", ");
+            String[] split = line.split(", ");
 
             memory.setTotal(StringExt.toDouble(split[0].split(" ")[0]));
             memory.setFree(StringExt.toDouble(split[1].split(" ")[0]));
@@ -265,9 +265,9 @@ public class TopController {
 //        PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND
         for (int i = 7; i < data.size(); i++) {
             try {
-                var split = data.get(i).split(" ");
+                String[] split = data.get(i).split(" ");
 
-                var process = new Process();
+                Process process = new Process();
 
                 process.setId(Integer.parseInt(split[0]));
                 process.setUser(split[1]);

@@ -21,7 +21,7 @@ public class Mock {
 
     public Top mockData() {
         InputStream is = getClass().getClassLoader().getResourceAsStream("mock_data.txt");
-        var data = new ArrayList<String>();
+        ArrayList<String> data = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new InputStreamReader(Objects.requireNonNull(is)))) {
             String line;
