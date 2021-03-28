@@ -49,6 +49,7 @@ public class TopController {
             top.addProcesses(extractProcessData(data));
             return top;
         } catch (Exception e) {
+            System.out.println(String.join("\n", data));
             throw new RuntimeException(e.getMessage());
         }
     }
@@ -104,7 +105,7 @@ public class TopController {
         matcher = loadAveragePattern.matcher(line);
 
         if (!matcher.find())
-            throw new RuntimeException("Unable to retrieve load average info");
+            throw new RuntimeException("Unable to retrieve load average info - pattern doesnt match");
 
         String[] splLoadAverage = matcher.group(0).split(", ");
         LoadAverage loadAverage = new LoadAverage();
@@ -161,7 +162,7 @@ public class TopController {
             top.setStoppedTasks(Integer.parseInt(split[3].split(" ")[0]));
             top.setZombieTasks(Integer.parseInt(split[4].split(" ")[0]));
         } catch (Exception exception) {
-            throw new RuntimeException("Unable to retrieve tasks info");
+            throw new RuntimeException("Unable to retrieve tasks info " + exception.getMessage());
         }
     }
 
@@ -192,7 +193,7 @@ public class TopController {
             cpuUsage.setStealTime(StringExt.toDouble(split[6].split(" ")[0]));
             top.setCpuUsage(cpuUsage);
         } catch (NumberFormatException e) {
-            throw new RuntimeException("Unable to retrieve cpu usage info");
+            throw new RuntimeException("Unable to retrieve cpu usage info" + e.getMessage());
         }
     }
 
@@ -220,7 +221,7 @@ public class TopController {
 
             top.setSystemMemory(memory);
         } catch (Exception e) {
-            throw new RuntimeException("Unable to retrieve system memory info");
+            throw new RuntimeException("Unable to retrieve system memory info" + e.getMessage());
         }
     }
 
@@ -244,7 +245,7 @@ public class TopController {
 
             top.setSwapMemory(memory);
         } catch (Exception e) {
-            throw new RuntimeException("Unable to retrieve swap memory info");
+            throw new RuntimeException("Unable to retrieve swap memory info" + e.getMessage());
         }
     }
 
