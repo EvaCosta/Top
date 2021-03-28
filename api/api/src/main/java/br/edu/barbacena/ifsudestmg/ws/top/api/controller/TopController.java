@@ -98,16 +98,9 @@ public class TopController {
         // this line has no patterns that we can use to split variables. So we use regex to retrieve the data.
 
         //region Load Average
-        Pattern loadAveragePattern = Pattern.compile(
-                "(\\d*\\.?\\d|\\d{0,9}(,\\d{0,9})*(\\.\\d)?)," +
-                        " (\\d*\\.?\\d|\\d{0,9}(,\\d{0,9})*(\\.\\d)?)," +
-                        " (\\d*\\.?\\d|\\d{0,9}(,\\d{0,9})*(\\.\\d)?),(\\d*\\.?\\d|\\d{0,9}(,\\d{0,9})*(\\.\\d)?)");
-        matcher = loadAveragePattern.matcher(line);
+        String strLoadAverage = line.substring(line.indexOf("load average:") + "load average:".length()).trim();
+        String[] splLoadAverage = strLoadAverage.split(", ");
 
-        if (!matcher.find())
-            throw new RuntimeException("Unable to retrieve load average info - pattern doesnt match");
-
-        String[] splLoadAverage = matcher.group(0).split(", ");
         LoadAverage loadAverage = new LoadAverage();
         try {
             loadAverage.setOneMinute(StringExt.toDouble(splLoadAverage[0]));
