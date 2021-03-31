@@ -1,46 +1,96 @@
 //onload simplificada jquery
 $(function(){
-    /*insere componentes de exemplo na tabela
-      de processos do dashboard*/
-    p='100'
-    u='user'
-    c='command'
-    for (let index = 0; index < 10; index++) {
-        appendLine(p+index,u+index,c+index);
-    }
+  
+  initialize();
 
-    /*Define clique dos botes da tabela e chama função
+});
+
+//Popula todos os componentes da dashboard com valores recuperados da API.
+function initialize(){
+
+  const urlAPI = "https://api-java-top.herokuapp.com/top";
+
+  $.ajax({
+    async: true,
+    url: urlAPI,
+    method: "GET",
+
+    success:function(response){
+
+      console.log(response);
+
+      for (let index = 0; index < response.processes.length; index++) {
+      
+        appendLine(response.processes[index].id,response.processes[index].user,response.processes[index].command);
+      
+      } 
+      
+      addSystemMemory(response.systemMemory.total,
+                             response.systemMemory.free,
+                             response.systemMemory.used,
+                             response.systemMemory.bufferCache);
+      
+
+
+                             
+      // ------- Adicionar as funções de preenchimento dos cards aqui -------
+
+
+
+
+      /*Define clique dos botes da tabela e chama função
       de completar as informações do modal.*/
-    var clicado = null, nome = null;
-    $('.clicado').click(function () {
-        pid = $(this).parents('tr').find('th').eq(0).text();
-        
-        addCompleteModal(pid,'VIN','100','8','3832716','176920','4','2.2','122856','kwin_x11','6:12.35','S');
-    });
-    
-    /*adiciona linha na tabela de processos
-      A esqueda parametros na ordem de inserção
-      a direita chave do processo no json.
-    pid->pid
-    user->user
-    command->command
-    */
-    function appendLine(pid,user,command) {
-        $('#process').append('<tr>'+
-            '<th scope="row">'+pid+'</th>'+
-            '<td>'+user+'</td>'+
-            '<td>'+command+'</td>'+
-           '<td>'+
-                '<button type="button" class="btn btn-primary clicado" data-bs-toggle="modal" data-bs-target="#modal">'+
-                    'Complet Data'+
-                '</button>'+
-            '</td>'+
-        '</tr>');
-    }
+      var clicado = null, nome = null;
+      $('.clicado').click(function () {
+          pid = $(this).parents('tr').find('th').eq(0).text();
+          
+          searchForProcess(pid);
 
-    /*Insere dados na modal do processo completo.
-      A esqueda parametros na ordem de inserção
-      a direita chave do processo no json.
+      });
+
+    },
+    error: function(erro){
+        alert("Erro ao acessar a API");
+    },
+
+  });
+
+}
+
+/*
+  Pesquisa pelo pid do processo fazendo uma requisição ajax na api. 
+  Após recuperar os dados as tabelas preenchidas.
+*/
+function searchForProcess(pid){
+  const urlAPIProcess = "https://api-java-top.herokuapp.com/top/process/";
+
+  $.ajax({
+      
+    async: true,
+    url: urlAPIProcess+pid,
+    method: "GET",
+
+    success:function(response){
+
+      addCompleteModal(pid,response.user,response.priority,response.niceLevel,response.virtualMemoryUsed,response.residentMemoryUsed,
+        response.percentageOfCpuUsed,response.percentageOfMemoryUsed,response.shareableMemory,response.command,response.upTime,response.state);
+    
+    },
+
+    error: function(erro){
+      alert("Erro ao acessar a API");
+    },
+
+  });
+}
+
+/*insere componentes de exemplo na tabela
+  de processos do dashboard*/
+  
+/*Insere dados na modal do processo completo.
+  
+  A esqueda parametros na ordem de inserção
+  a direita chave do processo no json.
     pid->pid
     user->user
     priority->priority
@@ -53,24 +103,59 @@ $(function(){
     command->command
     uptime->upTime
     state->state
-    */
-    function addCompleteModal(pid,user,priority,nicelevel,virtmemused,resmemused,cpuused,menused,sharmen,command,uptime,state){
-        $('#pidmodal').text(pid);
-        $('#usermodal').text(user);
-        $('#priomodal').text(priority);
-        $('#nilvlmodal').text(nicelevel);
-        $('#vmumodal').text(virtmemused);
-        $('#rmumodal').text(resmemused);
-        $('#pcumodal').text(cpuused);
-        $('#pmumodal').text(menused);
-        $('#shmmodal').text(sharmen);
-        $('#cmdmodal').text(command);
-        $('#tmmodal').text(uptime);
-        $('#stsmodal').text(state);
-    }
-
-});
+  */
+function addCompleteModal(pid,user,priority,nicelevel,virtmemused,resmemused,cpuused,menused,sharmen,command,uptime,state){
+  $('#pidmodal').text(pid);
+  $('#usermodal').text(user);
+  $('#priomodal').text(priority);
+  $('#nilvlmodal').text(nicelevel);
+  $('#vmumodal').text(virtmemused);
+  $('#rmumodal').text(resmemused);
+  $('#pcumodal').text(cpuused);
+  $('#pmumodal').text(menused);
+  $('#shmmodal').text(sharmen);
+  $('#cmdmodal').text(command);
+  $('#tmmodal').text(uptime);
+  $('#stsmodal').text(state);
+}
 
 
+/*Adiciona linha na tabela de processos
 
+  A esqueda parametros na ordem de inserção
+  a direita chave do processo no json.
 
+    pid->pid
+    user->user
+    command->command
+*/   
+function appendLine(pid,user,command) {
+  $('#process').append('<tr>'+
+      '<th scope="row">'+pid+'</th>'+
+      '<td>'+user+'</td>'+
+      '<td>'+command+'</td>'+
+    '<td>'+
+          '<button type="button" class="btn btn-primary clicado" data-bs-toggle="modal" data-bs-target="#modal">'+
+              'Complet Data'+
+          '</button>'+
+      '</td>'+
+  '</tr>');
+}
+
+/*Adiciona os dados da memória do sistema no card correspondente.
+  A esqueda parametros na ordem de inserção
+  a direita chave do processo no json.
+  
+    total->total
+    free->free
+    used->used
+    buffer->buffer
+*/
+function addSystemMemory(total, free, used, buffer){
+
+  $("#memoriaTotal").html(total);
+  $("#memoriaLivre").html(free);
+  $("#memoriaEmUso").html(used);
+  $("#buffer").html(buffer);
+
+}
