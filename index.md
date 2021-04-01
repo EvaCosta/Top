@@ -1,6 +1,6 @@
 # Top
 
-O objetivo é desenvolver uma API RESTful JSON, através dela é posível capturar e retornar a saída do comando Linux _top_ que é considerado uma ferramenta importante para um administrador de sistemas, através do uso desse comando é fornecida uma visão em tempo real da dinâmica do sistema em execução
+O objetivo é desenvolver uma API RESTful JSON, através dela é possível capturar e retornar a saída do comando Linux _top_ que é considerado uma ferramenta importante para um administrador de sistemas, através do uso desse comando é fornecida uma visão em tempo real da dinâmica do sistema em execução
 
 
 ## Sobre
@@ -20,3 +20,9 @@ Informações disponíveis para visualização:
 8. Listagem dos processos em execução: PID, user e comando executado.
 9. O usuário pode selecionar um dos processos em execução e obter informações complementares sobre o mesmo: prioridade, memória virtual, memória,
 estado, %CPU, tempo de execução, etc.
+
+### Acessos 
+
+<a href="https://api-java-top.herokuapp.com/swagger-ui.html#/">Documentação API</a>
+
+<a href="https://api-java-top.herokuapp.com/v2/api-docs">API</a>
