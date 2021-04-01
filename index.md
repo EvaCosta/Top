@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+# Top
 
-You can use the [editor on GitHub](https://github.com/EvaCosta/Top/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+O objetivo é desenvolver uma API RESTful JSON, através dela é posível capturar e retornar a saída do comando Linux _top_ que é considerado uma ferramenta importante para um administrador de sistemas, através do uso desse comando é fornecida uma visão em tempo real da dinâmica do sistema em execução
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Sobre
+<p>Projeto desenvolvido no curso de <b>Tecnologia em Sistemas para Internet</b> pertencente ao <b>IF Sudeste MG Barbacena</b> na disciplina de <b>Webservices</b> ministrada pelo professor <a href="https://github.com/rafjaa">Rafael Alencar</a> em 2021.</p>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Recursos
 
-```markdown
-Syntax highlighted code block
+Informações disponíveis para visualização:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/EvaCosta/Top/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. Atualização automática dos dados a cada S segundos, sendo este valor configurável pelo usuário.
+2. Tempo que o sistema está em execução.
+3. Quantos usuários estão no sistema.
+4. Média de carga de 1, 5 e 15 minutos.
+5. Quantidade de processos em execução e seus respectivos status.
+6. Estados da CPU.
+7. Uso da memória.
+8. Listagem dos processos em execução: PID, user e comando executado.
+9. O usuário pode selecionar um dos processos em execução e obter informações complementares sobre o mesmo: prioridade, memória virtual, memória,
+estado, %CPU, tempo de execução, etc.
