@@ -19,6 +19,8 @@ function initialize(){
 
       console.log(response);
 
+      runtime(response.time, response.numberOfUsers, response.numberOfTasks, response.runningTasks)
+
       for (let index = 0; index < response.processes.length; index++) {
       
         appendLine(response.processes[index].id,response.processes[index].user,response.processes[index].command);
@@ -159,3 +161,12 @@ function addSystemMemory(total, free, used, buffer){
   $("#buffer").html(buffer);
 
 }
+
+function runtime(time, users, tasks, exec){
+  $("#tExecucao").html(time);
+  $("#nUsuarios").html(users);
+  $("#nTarefas").html(tasks);
+  $("#pExecucao").html(exec);
+  
+}
+
