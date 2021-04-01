@@ -61,15 +61,15 @@ p{
 	font-family: URW Chancery L, cursive;
 	font-size: 15px;
 }
-.main__cards {
-  padding: 2%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  margin: 10px 10px;
-}
 
+.main__cards {
+	display: grid;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
 .card_inner {
-  align-items: center;
   box-shadow: 10px 10px 8px 10px #888888;
+}
+.cards{
+	justify-content: center;
 }
