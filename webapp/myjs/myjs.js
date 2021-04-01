@@ -42,7 +42,11 @@ function initialize(){
                              
       // ------- Adicionar as funções de preenchimento dos cards aqui -------
 
+      addLoadAverage(response.loadAverage.oneMinute, response.loadAverage.fiveMinutes, response.loadAverage.fifteenMinutes);
 
+      addInfoCPU(response.cpuUsage.user,response.cpuUsage.system, response.cpuUsage.idleProcess, response.cpuUsage.ioWait);
+
+      addInfoSwapMemory(response.swapMemory.total, response.swapMemory.used, response.swapMemory.free, response.swapMemory.available);	
 
 
       /*Define clique dos botes da tabela e chama função
@@ -175,3 +179,23 @@ function runtime(time, users, tasks, exec){
   
 }
 
+
+function addLoadAverage(oneMinute, fiveMinutes, fifteenMinutes){
+  $("#bCarga1").html(oneMinute.toPrecision(4));
+  $("#bCarga5").html(fiveMinutes.toPrecision(4));
+  $("#bCarga15").html(fifteenMinutes.toPrecision(4));
+}
+
+function addInfoCPU(usuario, sistema, idleProcess, ioWait){
+  $("#cpuUsuario").html(usuario);
+  $("#cpuSistema").html(sistema);
+  $("#cpuOcioso").html(idleProcess);
+  $("#cpuMenPrioridade").html(ioWait);
+}
+
+function addInfoSwapMemory(total, livre, uso, disponivel){
+  $("#swapTotal").html(total);
+  $("#swapLivre").html(livre);
+  $("#swapEmUso").html(uso);
+  $("#swapDisponivel").html(disponivel);
+}
