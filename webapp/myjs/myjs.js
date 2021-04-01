@@ -5,6 +5,11 @@ $(function(){
 
 });
 
+function intervalRefresh(){
+  var seconds = $("#refresh").val() * 1000;
+  setInterval(initialize, seconds);
+}
+
 //Popula todos os componentes da dashboard com valores recuperados da API.
 function initialize(){
 
