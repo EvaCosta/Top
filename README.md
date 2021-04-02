@@ -22,7 +22,7 @@ O objetivo é desenvolver uma API RESTful JSON, através dela é posível captur
   <li><a href=>Daniel Soares Ferreira</a></li>
   <li><a href=>Eva Costa De Melo</a></li>
   <li><a href=>Edmilson De Oliveira Santana Junior</a></li>
-  <li><a href=>Guilherme Magnus</a></li>  
+  <li><a href="https://drive.google.com/drive/folders/1RgN3ockAbD11-VqN9Gx8ghzJDLFopA7i?usp=sharing">Guilherme Magnus</a></li>  
   <li><a href=>Lucas Cristovam</a></li>  
   <li><a href=>Maiki Ferreira</a></li>  
   <li><a href=>Rafaela Aparecida Pereira Paiva</a></li>
