@@ -27,5 +27,5 @@ estado, %CPU, tempo de execução, etc.
 
 <a href="https://api-java-top.herokuapp.com/top">API</a>
 
-<a href="https://api-java-top.herokuapp.com/top">Site</a>
+<a href="https://linux-top.herokuapp.com/">Site</a>
 
