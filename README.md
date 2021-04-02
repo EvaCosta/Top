@@ -37,7 +37,7 @@ Para ver a aplicação funcionando basta clicar no link abaixo:
   <li><a href=https://drive.google.com/file/d/1uzPJlkwBicTp3g-WrAsznGfratqEGmvx/view?usp=sharing>Maiki Ferreira</a></li>  
   <li><a href="https://drive.google.com/file/d/1D1V8i4igGle54xy2Z5fDe0Lbr7IkapEf/view?usp=sharing">Rafaela Aparecida Pereira Paiva</a></li>
   <li><a href="https://drive.google.com/drive/folders/1Yah9__dqrpKQBGoYmw8B4xUowqeGlq4W?usp=sharing">Vinicius Augusto</a></li>
-  <li><a href=>Vinicius Tristão</a></li>
+  <li><a href="https://drive.google.com/file/d/1ae8dhq1lX8Zh-h2xc1BJie1yfXnS-W9B/view?usp=sharing">Vinicius Tristão</a></li>
 
 </ul>
 
