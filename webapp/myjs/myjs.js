@@ -146,7 +146,7 @@ function appendLine(pid,user,command) {
       '<td>'+user+'</td>'+
       '<td>'+command+'</td>'+
     '<td>'+
-          '<button type="button" class="btn btn-primary clicado" data-bs-toggle="modal" data-bs-target="#modal">'+
+          '<button type="button" class="btn btn-outline-info clicado" data-bs-toggle="modal" data-bs-target="#modal">'+
               'Complet Data'+
           '</button>'+
       '</td>'+
