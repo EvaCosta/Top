@@ -19,11 +19,7 @@ Para ver a aplicação funcionando basta clicar no link abaixo:
 <a href="https://api-java-top.herokuapp.com/top">API</a>
 
 ### Aplicação em funcionamento
-<a href="https://github.com/EvaCosta/Top/blob/main/demo/.gif">
-  <div align="center">
-    <img src="https://github.com/EvaCosta/Top/blob/main/demo/.gif"  width="100%" height="100%">
-  </div>
-</a>
+<a href="https://drive.google.com/file/d/1njO41vfsxfNbVB8N0zfHbKrqJ1F7oq4n/view?usp=sharing">Apresentação</a>
 
 ## Apresentações Individuais  
 
