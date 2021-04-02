@@ -1,0 +1,75 @@
+#refresh{
+    display: inline;
+    width: 70%;
+}
+
+#idProcesso{
+	text-align: center;
+	background-color: #DCEDC8;
+	display: block;
+	padding: 2%;
+	border-radius: 2%;
+	color:#388E3C;
+	font-weight: bold;
+	box-shadow: transparent;
+}
+#idCPU{
+	text-align: center;
+	background-color: #64b5f6;
+	color:#0288D1;
+	font-weight: bold;
+	display: block;
+	padding: 2%;
+	border-radius: 2%;
+}
+#idSwap{
+	text-align: center;
+	background-color: #ff5bff;
+	color:#9C27B0;
+	font-weight: bold;
+	display: block;
+	padding: 2%;
+	border-radius: 2%;
+}
+#idSistema{
+	text-align: center;
+	background-color: #ffbcaf;
+	color:#C2185B;
+	font-weight: bold;
+	display: block;
+	padding: 2%;
+	border-radius: 2%;
+}
+#idBCarga{
+	text-align: center;
+	background-color: #e2f1f8;
+	color:#808e95;
+	font-weight: bold;
+	display: block;
+	padding: 2%;
+	border-radius: 2%;
+}
+
+span{
+	position: absolute;
+	left: 70%;
+	font-family: URW Chancery L, cursive;
+	font-size: 15px;
+}
+p{
+	margin-left: 5%;
+	font-family: URW Chancery L, cursive;
+	font-size: 15px;
+}
+
+.main__cards {
+	display: grid;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.card_inner {
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+.cards{
+	justify-content: center;
+}
