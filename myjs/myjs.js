@@ -14,7 +14,7 @@ function intervalRefresh(){
 function initialize(){
 
   const urlAPI = "https://api-java-top.herokuapp.com/top";
-
+  cleanTable()
   $.ajax({
     async: true,
     url: urlAPI,
@@ -130,6 +130,9 @@ function addCompleteModal(pid,user,priority,nicelevel,virtmemused,resmemused,cpu
   $('#stsmodal').text(state);
 }
 
+function cleanTable(){
+  $('#process').html('')
+}
 
 /*Adiciona linha na tabela de processos
 
