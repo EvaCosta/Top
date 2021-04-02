@@ -19,13 +19,13 @@ O objetivo é desenvolver uma API RESTful JSON, através dela é posível captur
 
  <ul>
   
-  <li><a href=>Daniel Soares Ferreira</a></li>
+  <li><a href="https://youtu.be/D9d_l5KUPWQ">Daniel Soares Ferreira</a></li>
   <li><a href=>Eva Costa De Melo</a></li>
-  <li><a href=>Edmilson De Oliveira Santana Junior</a></li>
+  <li><a href="https://drive.google.com/file/d/1kPoU7QzjBMziJsjYOo7U--zirbdmhv4A/view?usp=sharing">Edmilson De Oliveira Santana Junior</a></li>
   <li><a href="https://drive.google.com/drive/folders/1RgN3ockAbD11-VqN9Gx8ghzJDLFopA7i?usp=sharing">Guilherme Magnus</a></li>  
-  <li><a href=>Lucas Cristovam</a></li>  
+  <li><a href="https://www.youtube.com/watch?v=Y817cUVp8rc">Lucas Cristovam</a></li>  
   <li><a href=>Maiki Ferreira</a></li>  
-  <li><a href=>Rafaela Aparecida Pereira Paiva</a></li>
+  <li><a href="https://drive.google.com/file/d/1D1V8i4igGle54xy2Z5fDe0Lbr7IkapEf/view?usp=sharing">Rafaela Aparecida Pereira Paiva</a></li>
   <li><a href=>Vinicius Augusto</a></li>
   <li><a href=>Vinicius Tristão</a></li>
 
