@@ -25,4 +25,7 @@ estado, %CPU, tempo de execução, etc.
 
 <a href="https://api-java-top.herokuapp.com/swagger-ui.html#/">Documentação API</a>
 
-<a href="https://api-java-top.herokuapp.com/v2/api-docs">API</a>
+<a href="https://api-java-top.herokuapp.com/top">API</a>
+
+<a href="https://api-java-top.herokuapp.com/top">Site</a>
+
